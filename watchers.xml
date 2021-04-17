@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This is a sample watchers.xml file, suitable for import into Webstorm. It
+configures Webstorm to automatically compile less and and js files, into
+plain css and es5.
+
+You may need to make changes for your environment.  See, for example,
+lines 30 and 49.
+-->
+<TaskOptions>
+  <TaskOptions>
+    <option name="arguments" value="--no-color $FileName$" />
+    <option name="checkSyntaxErrors" value="true" />
+    <option name="description" value="Compiles .less files into .css files" />
+    <option name="exitCodeBehavior" value="ERROR" />
+    <option name="fileExtension" value="less" />
+    <option name="immediateSync" value="true" />
+    <option name="name" value="Less" />
+    <option name="output" value="$FileNameWithoutExtension$.css" />
+    <option name="outputFilters">
+      <array>
+        <FilterInfo>
+          <option name="description" value="lessc error format" />
+          <option name="name" value="lessc" />
+          <option name="regExp" value="$MESSAGE$$FILE_PATH$?:$LINE$:$COLUMN$" />
+        </FilterInfo>
+      </array>
+    </option>
+    <option name="outputFromStdout" value="true" />
+    <option name="program" value="/usr/local/bin/lessc" />
+    <option name="scopeName" value="Project Files" />
+    <option name="trackOnlyRoot" value="false" />
+    <option name="workingDir" value="$FileDir$" />
+    <envs />
+  </TaskOptions>
+  <TaskOptions>
+    <option name="arguments" value="--source-maps --out-file $FileNameWithoutExtension$.es5.js $FilePath$" />
+    <option name="checkSyntaxErrors" value="true" />
+    <option name="description" value="Transpiles ECMAScript 6 code to ECMAScript 5" />
+    <option name="exitCodeBehavior" value="ERROR" />
+    <option name="fileExtension" value="js" />
+    <option name="immediateSync" value="true" />
+    <option name="name" value="Babel" />
+    <option name="output" value="$FileNameWithoutExtension$.es5.js:$FileNameWithoutExtension$.es5.js.map" />
+    <option name="outputFilters">
+      <array />
+    </option>
+    <option name="outputFromStdout" value="false" />
+    <option name="program" value="grill/node_modules/babel-cli/bin/babel.js" />
+    <option name="scopeName" value="Project Files" />
+    <option name="trackOnlyRoot" value="true" />
+    <option name="workingDir" value="$FileDir$" />
+    <envs />
+  </TaskOptions>
+</TaskOptions>

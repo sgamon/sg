@@ -1,0 +1,57 @@
+<%= include('header') %>
+
+<main role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-3">Scott Gamon</h1>
+      <p>You found me! This is a playground with stuff I write, stuff I create, pointers to other stuff. Welcome!</p>
+      <p><a class="btn btn-primary btn-lg" href="/vanity" role="button">Learn more &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Find me</h2>
+        <ul>
+          <li><a href="https://twitter.com/sgamon" target="_blank">Follow me on Twitter</a></li>
+          <li><a href="https://www.linkedin.com/in/sgamon/" target="_blank">View my linkedin profile</a></li>
+          <li><a href="https://facebook.com/sgamon" target="_blank">Connect with me on Facebook</a></li>
+          <li><a href="https://github.com/sgamon" target="_blank">Clone my repos</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2>Feed</h2>
+        <p>It's a blog, and status, and presence, and more. A new way of interacting on the web.</p>
+        <p><a class="btn btn-secondary" href="/feed" role="button">View details &raquo;</a></p>
+      </div>
+      <!--
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      -->
+    </div>
+
+    <hr>
+
+  </div> <!-- /container -->
+
+</main>
+
+<footer class="container">
+  <!--<p>&copy; 2021</p>-->
+</footer>
+
+<script>
+  $.ready.then(
+    $('#home-nav-link')
+    .addClass('disabled')
+    .parent().removeClass('active')
+  )
+</script>
+<%= include('footer') %>

@@ -1,0 +1,32 @@
+{
+  "name": "sg",
+  "version": "1.0.0",
+  "description": "my personal web presence",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Scott Gamon",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-stage-0": "*",
+    "body-parser": "*",
+    "bunyan": "*",
+    "compression": "*",
+    "cookie-parser": "*",
+    "cors": "*",
+    "csurf": "*",
+    "errorhandler": "*",
+    "express": "*",
+    "express-session": "*",
+    "lodash": "*",
+    "lodash-express": "*",
+    "morgan": "*",
+    "recursive-readdir-sync": "*",
+    "serve-favicon": "*",
+    "session-file-store": "*",
+    "swagger-node-express": "*",
+    "uuid": "*"
+  }
+}
